@@ -1,0 +1,173 @@
+.colorlib_csmm .left-toggle.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+.colorlib-template-radio {
+    visibility: hidden;
+}
+
+.colorlib-single-template-wrapper img {
+    border: 1px solid transparent;
+}
+
+.colorlib-single-template-wrapper input[type="radio"]:checked + img,
+.colorlib-single-template-wrapper:hover img {
+    box-shadow: 0 0 0 1px #5b9dd9, 0 0 3px rgba(0, 115, 170, 0.8);
+}
+
+#accordion-section-colorlib_coming_soon_section_templates {
+    display: block !important;
+}
+
+.colorlib_csmm .onoffswitch-checkbox {
+    display: none
+}
+.epsilon-toggle {
+    position: relative;
+    float: right;
+    user-select: none;
+}
+
+.epsilon-toggle__items {
+    box-sizing: border-box;
+}
+
+.epsilon-toggle__items > * {
+    box-sizing: inherit;
+}
+
+.epsilon-toggle__input[type=checkbox] {
+    border-radius: 2px;
+    border: 2px solid #6c7781;
+    margin-right: 12px;
+    transition: none;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.epsilon-toggle__track {
+    background-color: #fff;
+    border: 2px solid #6c7781;
+    border-radius: 9px;
+    display: inline-block;
+    height: 18px;
+    width: 36px;
+    vertical-align: top;
+    transition: background .2s ease;
+}
+
+.epsilon-toggle__thumb {
+    background-color: #6c7781;
+    border: 5px solid #6c7781;
+    border-radius: 50%;
+    display: block;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    transition: transform .2s ease;
+}
+
+.epsilon-toggle__off {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    color: #6c7781;
+    fill: currentColor;
+}
+
+.epsilon-toggle__on {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    border: 1px solid #fff;
+    outline: 1px solid transparent;
+    outline-offset: -1px;
+    display: none;
+}
+
+
+.epsilon-toggle__input[type=checkbox]:checked + .epsilon-toggle__items .epsilon-toggle__track {
+    background-color: #11a0d2;
+    border: 9px solid transparent;
+}
+
+.epsilon-toggle__input[type=checkbox]:checked + .epsilon-toggle__items .epsilon-toggle__thumb {
+    background-color: #fff;
+    border-width: 0;
+    transform: translateX(18px);
+}
+
+.epsilon-toggle__input[type=checkbox]:checked + .epsilon-toggle__items .epsilon-toggle__off {
+    display: none;
+}
+
+.epsilon-toggle__input[type=checkbox]:checked + .epsilon-toggle__items .epsilon-toggle__on {
+    display: inline-block;
+}
+
+#sub-accordion-section-colorlib_coming_soon_section_general .customize-control-ccsm-editor iframe {
+    min-height: 120px;
+}
+
+/* Outer Section */
+#customize-outer-theme-controls #sub-accordion-section-colorlib_coming_soon_section_templates {
+    padding: 74px 0 0;
+}
+#sub-accordion-section-colorlib_coming_soon_section_templates > .customize-section-description-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+#sub-accordion-section-colorlib_coming_soon_section_templates > .customize-section-description-container .customize-section-title {
+    margin: 0;
+}
+#customize-outer-theme-controls #sub-accordion-section-colorlib_coming_soon_section_templates #customize-control-ccsm_settings-colorlib_coming_soon_template_selection {
+    height: calc( 100vh - 74px );
+    overflow: scroll;
+    padding: 10px 12px 0;
+    margin-bottom: 0;
+    box-sizing: border-box;
+}
+#accordion-section-colorlib_coming_soon_section_templates .change-theme.changing{
+    background: #eee;
+    border-color: #929793;
+    color: #32373c;
+    box-shadow: inset 0 2px 5px -3px rgba(0,0,0,.5);
+}
+
+#accordion-section-colorlib_coming_soon_section_templates .ccsm-active_template {
+    text-transform: capitalize;
+}
+
+/* CodeMirror */
+#customize-control-ccsm_settings-colorlib_coming_soon_page_custom_css .customize-section-description-container,
+#customize-control-ccsm_settings-colorlib_coming_soon_page_custom_css label {
+    padding: 12px;
+}
+
+#customize-control-ccsm_settings-colorlib_coming_soon_page_custom_css .CodeMirror {
+    height: calc(100vh - 185px);
+}
