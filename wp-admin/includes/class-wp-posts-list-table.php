@@ -67,7 +67,7 @@ class WP_Posts_List_Table extends WP_List_Table {
 	 * @see WP_List_Table::__construct() for more information on default arguments.
 	 *
 	 * @global WP_Post_Type $post_type_object
-	 * @global wpdb         $wpdb
+	 * @global wpdb         $wpdb             WordPress database abstraction object.
 	 *
 	 * @param array $args An associative array of arguments.
 	 */
@@ -136,7 +136,7 @@ class WP_Posts_List_Table extends WP_List_Table {
 
 	/**
 	 * @global array    $avail_post_stati
-	 * @global WP_Query $wp_query
+	 * @global WP_Query $wp_query         WordPress Query object.
 	 * @global int      $per_page
 	 * @global string   $mode
 	 */
@@ -695,7 +695,7 @@ class WP_Posts_List_Table extends WP_List_Table {
 	}
 
 	/**
-	 * @global WP_Query $wp_query
+	 * @global WP_Query $wp_query WordPress Query object.
 	 * @global int $per_page
 	 * @param array $posts
 	 * @param int $level
@@ -740,8 +740,8 @@ class WP_Posts_List_Table extends WP_List_Table {
 	}
 
 	/**
-	 * @global wpdb    $wpdb
-	 * @global WP_Post $post
+	 * @global wpdb    $wpdb WordPress database abstraction object.
+	 * @global WP_Post $post Global post object.
 	 * @param array $pages
 	 * @param int $pagenum
 	 * @param int $per_page
@@ -1260,7 +1260,7 @@ class WP_Posts_List_Table extends WP_List_Table {
 	}
 
 	/**
-	 * @global WP_Post $post
+	 * @global WP_Post $post Global post object.
 	 *
 	 * @param int|WP_Post $post
 	 * @param int         $level
@@ -1864,8 +1864,8 @@ class WP_Posts_List_Table extends WP_List_Table {
 					 *
 					 * @since 2.7.0
 					 *
-					 * @param string  $column_name Name of the column to edit.
-					 * @param WP_Post $post_type   The post type slug.
+					 * @param string $column_name Name of the column to edit.
+					 * @param string $post_type   The post type slug.
 					 */
 					do_action( 'bulk_edit_custom_box', $column_name, $screen->post_type );
 				} else {
@@ -1877,7 +1877,7 @@ class WP_Posts_List_Table extends WP_List_Table {
 					 *
 					 * @param string $column_name Name of the column to edit.
 					 * @param string $post_type   The post type slug, or current screen name if this is a taxonomy list table.
-					 * @param string taxonomy     The taxonomy name, if any.
+					 * @param string $taxonomy    The taxonomy name, if any.
 					 */
 					do_action( 'quick_edit_custom_box', $column_name, $screen->post_type, '' );
 				}
