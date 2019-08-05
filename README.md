@@ -9,3 +9,6 @@ https://colorlib.com/shapely/
 * clone repo in www or htdocs folder
 * create a database named: site (you can later rename) select utf8_general_ci
 * import the site.sql file found in source into the database
+
+* username: admin
+* password: administrator-is-a-admin 
